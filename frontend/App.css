@@ -1,0 +1,20 @@
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .input-section {
+    margin: 16px 0;
+  }
+  
+  .dark-mode-toggle {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
