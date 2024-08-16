@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"  # Mapping container port 5000 to host port 5000
+    volumes:
+      - ./backend:/app
+    environment:
+      - FLASK_ENV=development
+    command: flask run --host=0.0.0.0
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"  # Mapping container port 3000 to host port 3000
+    volumes:
+      - ./frontend:/app

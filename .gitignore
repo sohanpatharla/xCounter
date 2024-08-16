@@ -75,6 +75,10 @@ ENV/
 # VS Code
 .vscode/
 
+
+#build
+build/
+
 # JetBrains IDEs
 .idea/
 
